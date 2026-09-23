@@ -890,7 +890,7 @@
 
     @page {
       size: A4 portrait;
-      margin: 8mm 10mm 8mm 10mm;
+      margin: 10mm 12mm 10mm 12mm;
     }
 
     /* ALWAYS EXPORT / PRINT IN CRISP, EXECUTIVE LIGHT MODE */
@@ -901,8 +901,8 @@
         padding: 0 !important;
         margin: 0 !important;
         min-height: auto !important;
-        font-size: 8.8pt !important;
-        line-height: 1.38 !important;
+        font-size: 8.5pt !important;
+        line-height: 1.35 !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
       }
@@ -916,7 +916,7 @@
         display: none !important;
       }
 
-      /* Container styling for print */
+      /* Container styling for print: fluid, elegant, tightly packed */
       .cv-container {
         max-width: 100% !important;
         width: 100% !important;
@@ -925,17 +925,17 @@
         padding: 0 !important;
         background: #ffffff !important;
         color: #0f172a !important;
-        gap: 12px !important;
+        gap: 10px !important;
       }
 
       /* Header */
       .header-section {
         display: grid !important;
-        grid-template-columns: 1fr 135px !important;
+        grid-template-columns: 1fr 115px !important;
         align-items: center !important;
         border-bottom: 1px solid #e2e8f0 !important;
-        padding-bottom: 14px !important;
-        gap: 24px !important;
+        padding-bottom: 10px !important;
+        gap: 16px !important;
         break-inside: avoid !important;
         page-break-inside: avoid !important;
       }
@@ -947,9 +947,9 @@
 
       .header-avatar {
         display: block !important;
-        width: 135px !important;
-        height: 165px !important;
-        border-radius: 14px !important;
+        width: 115px !important;
+        height: 145px !important;
+        border-radius: 12px !important;
         border: 1.5px solid #cbd5e1 !important;
         box-shadow: none !important;
         justify-self: end !important;
@@ -960,6 +960,9 @@
         background: #ecfdf5 !important;
         border: 1px solid #a7f3d0 !important;
         color: #059669 !important;
+        font-size: 7pt !important;
+        padding: 2px 7px !important;
+        margin-bottom: 4px !important;
       }
 
       .status-dot {
@@ -971,14 +974,16 @@
         background: none !important;
         -webkit-text-fill-color: #0f172a !important;
         color: #0f172a !important;
-        font-size: 21pt !important;
+        font-size: 19pt !important;
         font-weight: 800 !important;
         line-height: 1.15 !important;
+        margin-bottom: 3px !important;
       }
 
       .job-title {
-        font-size: 11pt !important;
+        font-size: 10pt !important;
         color: #1e293b !important;
+        margin-bottom: 4px !important;
       }
 
       .job-title .highlight {
@@ -986,7 +991,7 @@
       }
 
       .specialty-tags {
-        font-size: 8pt !important;
+        font-size: 7.5pt !important;
         color: #475569 !important;
       }
 
@@ -996,46 +1001,42 @@
 
       .contact-bar {
         margin-top: 6px !important;
-        gap: 6px 14px !important;
+        gap: 4px 12px !important;
       }
 
       .contact-item {
-        font-size: 8pt !important;
+        font-size: 7.5pt !important;
         color: #334155 !important;
-        padding: 2px 4px !important;
+        padding: 1px 3px !important;
       }
 
       .contact-item svg {
         color: #2563eb !important;
       }
 
-      .header-avatar {
-        width: 125px !important;
-        height: 155px !important;
-        border-radius: 14px !important;
-        border: 1.5px solid #cbd5e1 !important;
-        box-shadow: none !important;
-      }
-
       /* Metrics strip */
       .metrics-strip {
-        gap: 10px !important;
-        break-inside: avoid;
-        page-break-inside: avoid;
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 8px !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        margin-top: 2px !important;
       }
 
       .metric-card {
-        padding: 10px 12px !important;
+        padding: 8px 10px !important;
         border: 1px solid #e2e8f0 !important;
-        border-left: 3.5px solid #2563eb !important;
+        border-left: 3px solid #2563eb !important;
         background: #f8fafc !important;
         box-shadow: none !important;
       }
 
       .metric-value {
-        font-size: 14pt !important;
+        font-size: 13pt !important;
         color: #0f172a !important;
         margin-bottom: 2px !important;
+        line-height: 1.1 !important;
       }
 
       .metric-value span.accent {
@@ -1043,23 +1044,24 @@
       }
 
       .metric-label {
-        font-size: 7.5pt !important;
+        font-size: 7pt !important;
         color: #475569 !important;
+        line-height: 1.25 !important;
       }
 
       /* Section Titles */
       .section-title {
-        font-size: 11pt !important;
+        font-size: 10.5pt !important;
         color: #0f172a !important;
-        margin-top: 14px !important;
-        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+        margin-bottom: 6px !important;
         break-after: avoid !important;
         page-break-after: avoid !important;
       }
 
       .section-title svg {
-        width: 17px !important;
-        height: 17px !important;
+        width: 15px !important;
+        height: 15px !important;
         color: #2563eb !important;
       }
 
@@ -1072,10 +1074,10 @@
         background: #ffffff !important;
         border: 1px solid #e2e8f0 !important;
         color: #334155 !important;
-        padding: 10px 14px !important;
+        padding: 8px 12px !important;
         box-shadow: none !important;
-        break-inside: avoid !important;
-        page-break-inside: avoid !important;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
       }
 
       .summary-card strong {
@@ -1083,63 +1085,76 @@
       }
 
       .summary-card p {
-        font-size: 8.5pt !important;
-        line-height: 1.5 !important;
+        font-size: 8pt !important;
+        line-height: 1.4 !important;
       }
 
       .summary-pillars {
-        margin-top: 10px !important;
-        padding-top: 10px !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        margin-top: 8px !important;
+        padding-top: 8px !important;
         border-top: 1px solid #e2e8f0 !important;
-        gap: 12px !important;
+        gap: 8px !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
       }
 
       .pillar-icon {
-        width: 26px !important;
-        height: 26px !important;
+        width: 24px !important;
+        height: 24px !important;
         background: #eff6ff !important;
         color: #2563eb !important;
       }
 
       .pillar-text h4 {
-        font-size: 8.5pt !important;
+        font-size: 8pt !important;
         color: #0f172a !important;
       }
 
       .pillar-text p {
-        font-size: 7.5pt !important;
+        font-size: 7.2pt !important;
         color: #475569 !important;
+        line-height: 1.3 !important;
       }
 
-      /* Skills grid */
+      /* Skills grid: allow rows to break naturally without kicking entire grid */
       .skills-grid {
-        gap: 10px !important;
-        break-inside: avoid !important;
-        page-break-inside: avoid !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px !important;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
       }
 
       .skill-category {
         background: #f8fafc !important;
         border: 1px solid #e2e8f0 !important;
-        padding: 12px 14px !important;
+        padding: 8px 10px !important;
         box-shadow: none !important;
         break-inside: avoid !important;
         page-break-inside: avoid !important;
       }
 
       .skill-category-header {
-        margin-bottom: 8px !important;
-        font-size: 8.5pt !important;
+        margin-bottom: 6px !important;
+        font-size: 8pt !important;
         color: #0f172a !important;
       }
 
       .skill-category-header svg {
+        width: 14px !important;
+        height: 14px !important;
         color: #2563eb !important;
       }
 
+      .skill-badges {
+        gap: 3px !important;
+      }
+
       .tech-pill {
-        font-size: 7pt !important;
-        padding: 2px 6px !important;
+        font-size: 6.8pt !important;
+        padding: 1.5px 5px !important;
         background: #ffffff !important;
         border: 1px solid #cbd5e1 !important;
         color: #1e293b !important;
@@ -1152,31 +1167,37 @@
         font-weight: 600 !important;
       }
 
-      /* Experience cards */
+      /* Experience list & cards: fluid and continuous without big gaps */
       .experience-list {
-        gap: 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 8px !important;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
       }
 
       .experience-card {
         background: #ffffff !important;
         border: 1px solid #e2e8f0 !important;
-        padding: 10px 14px !important;
+        padding: 8px 12px !important;
         box-shadow: none !important;
-        break-inside: avoid !important;
-        page-break-inside: avoid !important;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
       }
 
       .exp-header {
-        margin-bottom: 6px !important;
+        margin-bottom: 4px !important;
+        break-after: avoid !important;
+        page-break-after: avoid !important;
       }
 
       .exp-role-company h3 {
-        font-size: 10.5pt !important;
+        font-size: 9.8pt !important;
         color: #0f172a !important;
       }
 
       .company-location {
-        font-size: 8.5pt !important;
+        font-size: 8pt !important;
         color: #2563eb !important;
       }
 
@@ -1185,29 +1206,36 @@
       }
 
       .exp-meta {
-        font-size: 7.5pt !important;
-        padding: 2px 6px !important;
+        font-size: 7.2pt !important;
+        padding: 1.5px 5px !important;
         background: #f1f5f9 !important;
         border: 1px solid #e2e8f0 !important;
         color: #475569 !important;
       }
 
       .exp-summary {
-        font-size: 8.5pt !important;
+        font-size: 7.8pt !important;
         color: #334155 !important;
-        margin-bottom: 8px !important;
+        margin-bottom: 6px !important;
+        break-after: avoid !important;
+        page-break-after: avoid !important;
+        line-height: 1.35 !important;
       }
 
       .exp-achievements {
-        gap: 4px !important;
-        margin-bottom: 8px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 3px !important;
+        margin-bottom: 6px !important;
       }
 
       .exp-achievements li {
-        font-size: 8pt !important;
-        line-height: 1.35 !important;
-        padding-left: 14px !important;
+        font-size: 7.6pt !important;
+        line-height: 1.32 !important;
+        padding-left: 12px !important;
         color: #334155 !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
       }
 
       .exp-achievements li::before {
@@ -1219,39 +1247,46 @@
       }
 
       .exp-stack {
-        padding-top: 6px !important;
-        gap: 4px !important;
+        padding-top: 5px !important;
+        gap: 3px !important;
         border-top: 1px solid #e2e8f0 !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
       }
 
       .exp-stack-title {
-        font-size: 6.5pt !important;
+        font-size: 6.2pt !important;
         color: #64748b !important;
       }
 
       .exp-stack-pill {
-        font-size: 6.5pt !important;
-        padding: 1px 5px !important;
+        font-size: 6.2pt !important;
+        padding: 1px 4px !important;
         background: #f1f5f9 !important;
         border: 1px solid #e2e8f0 !important;
         color: #334155 !important;
       }
 
-      /* Earlier roles */
+      /* Earlier roles: starts clean on Page 3 */
       .earlier-roles-accordion {
         break-before: page !important;
         page-break-before: always !important;
+        margin-top: 6px !important;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
       }
+
       .print-earlier-heading {
         display: block !important;
-        font-size: 10.5pt !important;
+        font-size: 9.8pt !important;
         font-weight: 700 !important;
         color: #0f172a !important;
-        margin-top: 14px !important;
-        margin-bottom: 8px !important;
+        margin-top: 8px !important;
+        margin-bottom: 6px !important;
         break-after: avoid !important;
         page-break-after: avoid !important;
       }
+
       details {
         display: block !important;
       }
@@ -1259,12 +1294,14 @@
       .earlier-content {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
-        gap: 6px !important;
-        margin-top: 6px !important;
+        gap: 5px !important;
+        margin-top: 4px !important;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
       }
 
       .compact-role {
-        padding: 8px 10px !important;
+        padding: 6px 8px !important;
         background: #f8fafc !important;
         border: 1px solid #e2e8f0 !important;
         break-inside: avoid !important;
@@ -1272,7 +1309,7 @@
       }
 
       .compact-role-top {
-        font-size: 8pt !important;
+        font-size: 7.5pt !important;
       }
 
       .compact-role-top strong {
@@ -1284,19 +1321,23 @@
       }
 
       .compact-role-desc {
-        font-size: 7.5pt !important;
+        font-size: 7pt !important;
         color: #475569 !important;
+        line-height: 1.28 !important;
       }
 
-      /* Education & Certifications */
+      /* Education & Certifications: continuous flow */
       .edu-certs-grid {
-        gap: 10px !important;
-        break-inside: avoid !important;
-        page-break-inside: avoid !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px !important;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
+        margin-top: 4px !important;
       }
 
       .edu-card, .cert-card {
-        padding: 12px 14px !important;
+        padding: 8px 10px !important;
         background: #ffffff !important;
         border: 1px solid #e2e8f0 !important;
         box-shadow: none !important;
@@ -1305,27 +1346,30 @@
       }
 
       .item-title {
-        font-size: 9pt !important;
+        font-size: 8.5pt !important;
         color: #0f172a !important;
       }
 
       .item-subtitle {
-        font-size: 8pt !important;
+        font-size: 7.6pt !important;
         color: #2563eb !important;
       }
 
       .item-period {
-        font-size: 7.5pt !important;
+        font-size: 7pt !important;
         color: #64748b !important;
       }
 
       .certs-list {
-        gap: 4px !important;
+        gap: 3px !important;
       }
 
       .certs-list li {
-        font-size: 7.5pt !important;
+        font-size: 7.2pt !important;
         color: #334155 !important;
+        line-height: 1.25 !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
       }
 
       .certs-list li strong {
@@ -1338,12 +1382,13 @@
 
       /* Footer */
       .cv-footer {
-        padding-top: 10px !important;
+        padding-top: 8px !important;
         border-top: 1px solid #e2e8f0 !important;
-        font-size: 7.5pt !important;
+        font-size: 7pt !important;
         color: #64748b !important;
-        break-inside: avoid;
-        page-break-inside: avoid;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        margin-top: 4px !important;
       }
     }
 
@@ -2015,6 +2060,56 @@
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
               <span><strong>Gestión de Dependencias y Paquetes con NPM</strong></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Idiomas & Comunicación Global -->
+        <div class="edu-card">
+          <div class="skill-category-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span>Idiomas & Comunicación Global</span>
+          </div>
+
+          <ul class="certs-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span><strong>Español:</strong> Nativo</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span><strong>Inglés:</strong> B2 / Técnico Profesional (lectura fluida de documentación, diseño de arquitectura y colaboración en equipos remotos)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Metodologías, Calidad & Liderazgo -->
+        <div class="cert-card">
+          <div class="skill-category-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span>Metodologías & Liderazgo de Ingeniería</span>
+          </div>
+
+          <ul class="certs-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span><strong>Agile & Scrum:</strong> Sprint planning, estimación técnica, gestión de dependencias y entregas continuas</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span><strong>Excelencia & Calidad:</strong> Code Reviews rigurosos, Mentoría, Principios SOLID y Clean Code</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span><strong>Seguridad & Resiliencia:</strong> Criterio OWASP, observabilidad proactiva y tolerancia a fallos</span>
             </li>
           </ul>
         </div>
